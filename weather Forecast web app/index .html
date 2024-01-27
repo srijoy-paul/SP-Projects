@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <!-- <form id="search"> -->
+        <input
+          id="searchbar"
+          list="cities"
+          type="search"
+          placeholder="Enter your city"
+        />
+        <datalist id="cities">
+          <option value="Bangalore"></option>
+          <option value="Dhanbad"></option>
+        </datalist>
+      <!-- </form> -->
+      <article id="current-forecast">
+        <h1 class="city">City Name</h1>
+        <p class="population">
+          <i class="bi bi-people-fill"></i>
+          <span class="population-data">City Population</span>
+        </p>
+        <p class="temp">Temp</p>
+        <p class="descp">--Desc--</p>
+        <p class="min-max">H L</p>
+      </article>
+
+      <article id="hourly-forecast">
+        <h1>Hourly forecast</h1>
+        <section class="hourly-container">
+          <article>
+            <h3 class="time">Now</h3>
+            <!-- <img class="icon" src="" alt="" /> -->
+            <p class="icon">--</p>
+            <p class="hourly-temp">--</p>
+          </article>
+        </section>
+      </article>
+
+      <article id="five-days-forecast">
+        <h1 class="days-forecast-title">5 day forecast</h1>
+        <section class="five-days-container">
+          <article class="day-forecast">
+            <h3>Today</h3>
+            <p>--</p>
+            <p class="min-temp">-- --</p>
+            <p class="max-temp">-- --</p>
+          </article>
+          <article class="day-forecast">
+            <h3>Thursday</h3>
+            <p>--</p>
+            <p class="min-temp">-- --</p>
+            <p class="max-temp">-- --</p>
+          </article>
+        </section>
+      </article>
+
+      <article id="feels">
+        <h3>Feels like</h3>
+        <p class="feels-temp">--</p>
+      </article>
+      
+      <article id="humidity">
+        <h3>Humidity</h3>
+        <p class="humidity-val">--</p>
+      </article>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

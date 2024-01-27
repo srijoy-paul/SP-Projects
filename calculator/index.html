@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+           width:400px;
+           margin: 0 auto;
+           margin-top: 40px;
+        }
+        .calculator{
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+            padding: 20px;
+            max-width: 400px;
+            border-radius: 5px;
+        }
+        #result{
+            width: 100%;
+            border: none;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3)
+            inset;
+            font-size: 25px;
+            border-radius: 5px;
+            outline: none;
+            margin-bottom: 20px;
+            position: relative;
+
+            
+        }
+        #result::placeholder{
+            color: #ccc;
+            position: absolute;
+            right: 10px;
+            
+        }
+
+        .buttons{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 10px;
+            
+        }
+        button{
+            padding: 10px;
+            border: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            font-size: 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: .3s ease;
+
+        }
+        button:hover{
+            background-color: #ccc
+        }
+        .clear{
+            background-color: #ff4136;
+            color: white;
+        }
+        .operator{
+            background-color: #0074d9;
+            color: white;
+        
+        }
+        .number,.decimal{
+            background-color: white;
+        }
+        .equal{
+            background-color: #01ff70;
+            grid-row: span 3;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="calculator">
+
+        <input type="text" id="result" placeholder="0" readonly>
+
+        <div class="buttons">
+            <button class="clear">C</button>
+            <button class="operator">/</button>
+            <button class="operator">*</button>
+            <button class="operator">-</button>
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator">+</button>
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="equal">=</button>
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="number">0</button>
+            <button class="decimal">.</button>
+        </div>
+        
+    </div>
+    
+  <script>
+
+    const buttonsEl = document.querySelectorAll("button");
+    const inputvalueEl = document.getElementById('result');
+    
+
+    for(let i=0;i<buttonsEl.length;i++){
+        buttonsEl[i].addEventListener('click',() => {
+           
+            const buttonvalue = buttonsEl[i].textContent;
+
+            if(buttonvalue === "C"){
+            clearResult();
+               }
+            else if(buttonvalue === "="){
+            calculateResult();
+               }
+            else{
+            appendValue(buttonvalue);
+             }
+
+        });
+ }
+
+      
+       function clearResult(){
+
+           inputvalueEl.value = "";
+
+        }
+
+        function calculateResult(){
+
+            inputvalueEl.value = eval(inputvalueEl.value);
+
+        }
+        function appendValue(buttonvalue){
+
+            inputvalueEl.value += buttonvalue;
+        }
+
+    </script>
+    
+</body>
+</html>

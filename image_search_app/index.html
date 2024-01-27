@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imgsearch app</title>
+
+    <style>
+        body{
+            margin: 0;
+            background-color: rgb(232, 229, 229);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        h1{
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 50px;
+            font-size: 36px;
+
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+        #search-input{
+          width: 60%;
+          padding: 10px 20px;
+          font-size: 18px;
+          border: none;
+          outline: none;
+          letter-spacing: 1px;
+          border-radius: 5px;
+          box-shadow:0 0  5px rgba(0,0,0,0.2) ;
+
+        }
+        #search-btn{
+             background-color: rgb(5, 160, 5);
+             padding: 10px 30px;
+             text-align: center;
+             border: none;
+             font-size: 18px;
+             letter-spacing: 1px;
+             border-radius: 5px;
+             margin-left: 20px;
+             box-shadow: 2px 4px 10px rgba(0,0,0,0.3);
+             cursor: pointer;
+             transition: .3s ease;
+             
+
+        }
+        #search-btn:hover{
+            background-color: darkgreen;
+            color: white;
+
+        }
+        .search-results{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            
+
+        }
+
+         .search-result{
+            width: 30%;
+            margin-bottom: 60px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            overflow: hidden;
+            
+        } 
+
+        .search-result img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+            
+            
+
+        }
+        .search-result:hover img{
+            transform: scale(1.05);
+        }
+        .search-result a{
+            padding: 10px;
+            color: #333;
+            display: block;
+            text-decoration: none;
+            transition: .3s ease-in-out;
+
+        }
+        .search-result:hover a{
+            background-color: rgba(0,0,0,0.1);
+        }
+
+        #show-btn{
+            background-color:#008cba;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 5px;
+            font-size: 18px;
+            display:block;
+            margin: 20px auto;
+            box-shadow: 2px 4px 10px rgba(0,0,0,0.3);
+            cursor: pointer;
+            transition: .3s ease;
+            text-align: center;
+
+
+        }
+        #show-btn:hover{
+            background-color: #035874;
+            color: white;
+        }
+
+        @media screen and (max-width:768px){
+            .search-result{
+                width:45%;
+            }
+            
+        }
+        @media screen and (max-width:480px) {
+            .search-result{
+                width:100%;
+            }
+            form{
+                flex-direction: column;
+            }
+            #search-input{
+                width: 85%;
+                margin-bottom: 20px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Search App</h1>
+    <form>
+        <input type="text" placeholder="search for images..." id="search-input">
+        <button type="submit" id="search-btn">Search</button>
+    </form>
+
+    <div class="search-results">
+        <div class="search-result">
+            <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="image">
+            
+            <a href="https://unsplash.com/photos/eOpewngf68w" target="_blank" rel="noopener noreferrer">an image of a nature</a>
+            
+        </div>
+
+        <div class="search-result">
+            <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="image">
+
+            <a href="https://unsplash.com/photos/eOpewngf68w" target="_blank" rel="noopener noreferrer">an image of a nature</a>
+            
+        </div>
+
+        <div class="search-result">
+            <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="image">
+
+            <a href="https://unsplash.com/photos/eOpewngf68w" target="_blank" rel="noopener noreferrer">an image of a nature</a>
+            
+        </div>
+        
+        
+    </div>
+
+    <button type="submit" id="show-btn">Show more</button>
+
+    <script>
+        
+        const apikey=
+    </script>
+    
+</body>
+</html>         
+       
+
+        
+   

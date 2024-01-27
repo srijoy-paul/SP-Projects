@@ -1,0 +1,35 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display:flex ;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-image: url(nature.jpg);
+    background-size:1250px 605px;
+    background-repeat:no-repeat; 
+    
+}
+h1{
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+
+}
+ .main{
+
+    background-color: black;
+    opacity: 0.5;
+    width:300px;
+    padding: 20px;
+    /* text-align: center; */
+    color: white;
+
+}
+form{
+    text-align: left;
+
+}
+input{
+    padding: 5px;
+}

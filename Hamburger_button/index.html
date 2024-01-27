@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger_button</title>
+
+    <style>
+
+        body{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           height: 100vh;
+        }
+
+        .hamburger{
+            border: 0;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        .hamburger .line{
+            background-color:lightcoral;
+            display: block;
+            height: 2px;
+            width: 30px;
+            margin: 5px 0;
+        }
+
+        .hamburger.open .line:nth-child(1){
+
+            transform: translateY(7px) rotate(45deg);
+        }
+        .hamburger.open .line:nth-child(2){
+           opacity: 0;
+        }
+
+        .hamburger.open .line:nth-child(3){
+            transform: translateY(-7px) rotate(-45deg);
+        }
+
+        .hamburger.line{
+            transition: all 0.1s ease-in;
+        }
+
+
+    </style>
+</head>
+<body>
+    <button class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </button>
+
+    <script>
+
+        const hamburger = document.querySelector('.hamburger');
+        hamburger.addEventListener("click" , ()=>{
+            hamburger.classList.toggle('open');
+        });
+
+    </script>
+</body>
+</html>

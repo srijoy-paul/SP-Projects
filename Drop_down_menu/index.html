@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop down menu</title>
+
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        body{
+            height: 100vh;
+            background-image: url(Nature.jpg);
+            background-size:100% 100%;
+            background-repeat: no-repeat;
+            font-size: 25px;
+        
+        }
+
+        .menudropdown{
+            width: 75%;
+            height: 100px;
+            margin: 0px auto;
+            margin-top: 25px;
+            /* background-color: red; */
+        }
+
+        .menudropdown ul{
+           
+            padding: 0;
+
+        }
+        .menudropdown ul li{
+            float: left;
+            background: black;
+            color: #fff;
+            list-style-type: none;
+            width: 200px;
+            height: 50px;
+             line-height: 50px;
+            text-align: center;
+            opacity: 0.6;
+            cursor: pointer;
+            
+        }
+
+        .menudropdown ul li ul{
+            display: none;
+        }
+
+        .menudropdown ul li:hover > ul{
+            display: block;
+           
+        }
+        .menudropdown ul li:hover{
+            opacity: 0.9;
+            background-color: #32CD32;
+        }
+
+        .menudropdown ul li ul li{
+            position: relative;
+        }
+
+        .menudropdown ul li ul li ul{
+            position: absolute;
+            left: 200px;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="menudropdown">
+        <ul>
+            <li>USA
+                <ul>
+                    <li>NewYork</li>
+                </ul>
+            </li>
+            
+            <li>India
+                <ul>
+                    <li>Pune</li>
+                    <li>Mumbai</li>
+                    <li>Banglore</li>
+                    <li>Dehradun</li>
+                    <li>Delhi
+
+                        <ul>
+                            <li>India Gate</li>
+                            <li>Kutub minar</li>
+                            <li>Red Fort</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>France</li>
+            <li>Australia</li>
+            <li>Brazil</li>
+        </ul>
+    </div>
+</body>
+</html>

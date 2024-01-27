@@ -1,0 +1,426 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins,sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+img{
+    width: 50px;
+    
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+     position:fixed;
+     z-index: 1;  
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-bottom: 10px;
+    width: 100%;
+     background:#000;
+     box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
+    
+}
+
+.logo{
+
+    color: white;
+    font-size: 28px;
+    font-family: cursive;
+
+  
+
+}
+
+.connect{
+
+    color: #009688;
+    text-decoration: underline;
+}
+
+.slider-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.slide img{
+    width: 100%;
+    height: 100vh;
+     margin-top: 5%;
+    
+}
+.slide{
+    display: none;
+}
+
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    padding: 8px 19px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+.next{
+    right: 10px;
+}
+
+.prev{
+    left: 10px;
+}
+
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background-color:darkslategray;
+    margin-top: 5%;
+}
+.box{
+    background-color:rgb(220,220,220);
+    height: 60%;
+    width: 20%;
+    margin: 30px;
+    box-shadow: -30px 30px 20px rgba(0,0,0,0.3);
+    
+}
+.icon{
+    margin-left:40%;
+    margin-top: 15px;
+   
+}
+
+h3{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    color: teal;
+    text-shadow: 2px 5px 8px rgba(0,0,0,0.3);
+    cursor: pointer;
+    font-family: 'Belanosima', sans-serif;
+    position: relative;
+
+
+}
+h3::after{
+    
+ content: "";
+ position: absolute;
+ bottom: -5px;
+ left: 5%;
+ height: 3px;
+ width:90%;
+ background-color:teal ;
+ transition: 0.3s;
+ transition-timing-function: ease-in-out;
+ transform: scaleX(0);
+
+}
+h3:hover::after{
+    transform: scaleX(1);
+
+}
+
+
+.data{
+    width: 80%;
+    margin-left: 30px;
+    padding: 20px;
+    margin-top: 25px;
+    color: white;
+    text-shadow: -8px 8px 12px  rgba(0,0,0,0.7);
+    text-align: center;
+    box-shadow: -12px 10px 10px rgba(0,0,0,0.3);
+    background-color:lightcoral;
+}
+
+.container2{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),url(images/blockchain.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.container2 h2{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Belanosima', sans-serif;
+    position: relative;
+    
+
+}
+
+ .creatoraddr h2::after{
+    
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 45%;
+    height: 3px;
+    width:10%;
+    background-color:lightcoral ;
+}
+   
+   
+
+.creatoraddr{
+    padding-top: 5%; 
+}
+
+.addrs{
+   width: 80%;
+   height: 50px;
+   background-color: white;
+   margin-left: 10%;
+   margin-top: 4%;
+   font-size: 15px;
+   box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.7);
+   
+
+}
+
+
+   
+.discription{
+    padding-top: 5%;
+}
+.discription h2::after{
+    
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 40%;
+    height: 3px;
+    width:20%;
+    background-color:lightcoral ;
+}
+   
+.discriptionaboutcampaign{
+    height: 250px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top:4% ;
+    padding: 15px;
+    font-size: 15px;
+    background-color: white;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+
+.container3{
+    display: flex;
+    background: linear-gradient(135deg,teal,#9b59b6);
+
+}
+
+.donator-list-container{
+   
+    width: 50%;
+   padding: 50px;
+   margin-top: 5%;
+    margin-left:2%;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.30);
+    background: linear-gradient(60deg,#00ffab,lightpink);
+    height: 800px;
+   
+}
+.donator-list-container h2{
+    font-family: 'Belanosima', sans-serif;
+    color: teal;
+    font-size: 40px;
+    background:lightpink;
+    padding: 15px;
+    text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+}
+.donator-list{
+
+    width: 100%;
+    height: 80vh;
+    margin: 5% auto;
+    background-color: white;
+    box-shadow:0 5px 30px rgba(0,0,0,0.30); 
+    overflow-y: scroll;
+
+}
+
+/* .boxes{
+    width:100% ;
+    height: 40px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+    margin: 3% auto;
+    cursor: pointer;
+} */
+
+ul{
+    list-style: none;
+    width: 100%;
+    margin:0 auto;
+    
+
+
+}
+li{
+    background-color: #f2f2f2;
+    padding: .5rem;
+    margin: .5rem;
+    font-size: 1rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.fund-container{
+    width: 50%;
+    padding: 50px;
+    margin-top: 10%;
+    margin-left:2%;
+    margin-right: 2%;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.30);
+    background:#333;
+    height: 650px;
+    border-radius: 8px;
+
+    
+}
+
+
+.fund-container h2{
+
+    font-family: 'Belanosima', sans-serif;
+    color: teal;
+    font-size: 40px;
+    background:lightgrey;
+    padding: 15px;
+    text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+#amount{
+    width: 100%;
+    height: 30px;
+    margin-top: 50px;
+    padding-left: 15px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.msgslider{
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    box-shadow: 8px 8px 10px rgba(0,0,0,0.3);
+    background-image: url(images/charity-work-is-very-selfish.jpg);
+    background-size: 100% 100%;
+    animation: changeMsg 60s linear infinite;
+    
+}
+
+@keyframes changeMsg{
+    0%{
+        background-image: url(images/charity-work-is-very-selfish.jpg);
+    }
+    25%{
+        background-image: url(images/charity2.jpg); 
+    }
+    50%{
+        background-image: url(images/charity3.jpg);
+    }
+    75%{
+        background-image: url(images/charity4.jpg);
+    }
+    100%{
+        background-image: url(images/charrity5.jpg);
+    }
+}
+button.fund-btn{
+padding: 18px 50px;
+margin-top: 60px;
+background:linear-gradient(135deg,#71b7e6,#9b59b6);
+box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+color: white;
+font-family: 'Belanosima', sans-serif;
+font-size: 20px;
+text-shadow: 3px 6px 10px rgba(0, 0, 0, 0.3);
+border-radius: 5px;
+cursor: pointer;
+
+
+}
+button.fund-btn:hover{
+ filter:brightness(0.7);
+}
+
+div .bottom-up-arrow{
+    position: relative;
+    top: 800px;
+    right: 2rem;
+    height: 48px;
+    width: 48px;
+    background: url(images/up-arrow.png);
+    cursor: pointer;
+    
+}
+ .bottom-up-arrow a{
+    position: absolute;
+    
+    
+}
+
+
+
+
+@media (max-width:390px){
+    .container1{
+        display: block;
+        height:auto;
+        
+        
+    }
+    .container1 .box{
+        height: auto;
+        width: 100%;
+    }
+    .container3{
+        display: block;
+        
+    }
+    .container3 .donator-list-container{
+        width: 100%;
+        height: auto;
+    }
+    .donator-list-container h2{
+        font-size: 20px;
+    }
+    .fund-container{
+        width: 100%;
+        height: auto;
+    
+    }
+}

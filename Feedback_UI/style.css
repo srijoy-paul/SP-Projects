@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: aquamarine;
+}
+body .container1 {
+  background-color: white;
+  width: 40%;
+  height: 50vh;
+  padding: 20px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  text-align: center;
+}
+body .container1 h1 {
+  color: blue;
+  text-shadow: 0 6px 8px rgba(0, 0, 0, 0.6);
+  margin-bottom: 40px;
+}
+body .container1 .feedback {
+  display: flex;
+  justify-content: center;
+}
+body .container1 .feedback div {
+  margin: 1.5rem;
+  padding: 1rem;
+}
+body .container1 .feedback div h3 {
+  margin-top: 10px;
+}
+body .container1 .feedback div:hover {
+  cursor: pointer;
+  background-color: rgb(210, 202, 202);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+}
+body .container1 button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  box-shadow: 0 6px 5px rgba(0, 0, 0, 0.6);
+  background-color: aquamarine;
+  font-weight: bold;
+  cursor: pointer;
+}
+body .container1 button:hover {
+  background-color: lightseagreen;
+  border: 1px solid blue;
+}
+body .container2 {
+  background-color: white;
+  width: 30%;
+  height: 35vh;
+  padding: 20px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  text-align: center;
+  color: blue;
+}
+body .container2 h3 {
+  margin: 20px;
+}
+body .container2 p {
+  margin: 30px;
+  font-weight: bold;
+}
+
+.active {
+  background-color: rgb(210, 202, 202);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+}
+
+/*# sourceMappingURL=style.css.map */

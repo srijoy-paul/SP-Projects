@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View all campaign</title>
+    <link rel="stylesheet" href="style1.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Poppins&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    
+    
+        <div>
+        <nav class="navbar">
+            <img src="images/logo.png" alt="logo">
+           <h2 class="logo">Care<span class="connect">Connect</span></h2>
+           
+           <a href="#"  onclick="add()"><button class="btn1" ><span class="btn">Create campaign</span></button></a>
+       </nav>
+    </div>
+
+       <div class="container active" id="blur">
+        
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/flood.jpeg" alt="">
+                <h3>Flood </h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab sint voluptatum, accusantium nisi eius temporibus dolore rem, nemo eaqu</p>
+                
+                <h5>Required Amount</h5>
+                <div class="amount"> </div>
+                 <h5>End Date</h5>
+                <div class="date"> </div>
+               <a href="#" class="btn">Read more</a>
+               </div>
+
+            <div class="box">
+                <img src="images/best NGO for education in India.jpg" alt="">
+                <h3>Literacy</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab sint voluptatum, accusantium nisi eius temporibus dolore rem, nemo eaque</p>
+                <h5>Required Amount</h5>
+                <div class="amount"> </div>
+                 <h5>End Date</h5>
+                <div class="date"> </div>
+                <a href="#" class="btn">Read more</a>
+            </div>
+
+            <div class="box">
+                <img src="images/cyclone.jpg" alt="">
+                <h3>Cyclone</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab sint voluptatum, accusantium nisi eius temporibus dolore rem, ne</p>
+                <h5>Required Amount</h5>
+                <div class="amount"> </div>
+                 <h5>End Date</h5>
+                <div class="date"> </div>
+                <a href="#" class="btn">Read more</a>
+            </div>
+
+            <div class="box">
+                <img src="images/Dog.webp" alt="">
+                <h3>Dogs</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab sint voluptatum, accusantium nisi eius temporibus dolore rem, ne</p>
+                <h5>Required Amount</h5>
+                <div class="amount"> </div>
+                 <h5>End Date</h5>
+                <div class="date"> </div>
+                <a href="#" class="btn">Read more</a>
+            </div>
+
+            <div class="box">
+                <img src="images/food.jpg" alt="">
+                <h3>Food</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab sint voluptatum, accusantium nisi eius temporibus dolore rem, ne</p>
+                
+                <h5>Required Amount</h5>
+                <div class="amount"> </div>
+                 <h5> End Date</h5>
+                <div class="date"> </div>
+
+                <a href="#" class="btn">Read more</a>
+            </div>
+
+            <div class="box">
+                <img src="images/handicap kid.jpg" alt="">
+                <h3>Handicaps</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab sint voluptatum, accusantium nisi eius temporibus dolore rem, ne</p>
+                <h5>Required Amount</h5>
+                <div class="amount"> </div>
+                 <h5>End Date</h5>
+                <div class="date"> </div>
+                <a href="#" class="btn">Read more</a>
+            </div>
+
+
+        </div>
+
+    </div>
+
+      <div id="popup">
+
+        <div class="close-btn">
+            <img src="images/cross.png" alt="cross" class="cross-icon">
+        </div>
+
+        <div class="createcampaign">
+
+          <h1>Create a Campaign</h1>
+
+        </div>
+
+        <div class="upload-img">
+
+            <img src="images/children-with-balloons.webp" alt="Campaignimage">
+
+        </div>
+
+        <div >
+            <input type="text" name="Fname" placeholder=" Enter Full Name" class="popupdata" id="name">
+         </div>
+
+          <div>
+            <input type="text" name="Campaing-title" placeholder="Enter Campaign title" class="popupdata"  id="campaign-title">
+         </div>
+
+        <div>
+          <textarea name="info" rows="10"  placeholder="Details about campaign" id="Details"></textarea>
+        </div>
+          
+           
+            <input type="number" placeholder="Enter Amount" id="amount">
+            <input type="text" placeholder="End Date" id="end-date">
+
+            <div>
+                <input type="text" placeholder="Address" class="popupdata" id="address">
+            </div>
+
+            <div>
+                <input type="text" placeholder="Link" class="popupdata" id="link">
+            </div>
+    
+            <p class="info">Please,Fill the required field</p>
+
+            <button id="createbtn">Create</button>
+
+
+         
+
+        
+    
+    </div>
+
+    
+
+
+    <script>
+        function add(){
+            var blur=document.getElementById('blur');
+            blur.classList.add('active');
+
+            var popup=document.getElementById('popup');
+            popup.classList.add('active');
+        }
+
+
+    </script>
+
+   <script src="index1.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .img1{
+            width: 100%;
+            height: 100vh;
+            background-image: url("children-with-balloons.webp");
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            
+            
+        }
+        
+        .img2{
+            width: 100%;
+            height: 100vh;
+            background-image: url("charity.jpg");
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            
+            
+        }
+
+        .box{
+            background-color: red;
+            width: 500px;
+            height: 200px;
+            border: 5px solid black;
+            overflow-y: scroll;
+            margin: 10px;
+            /* padding: 20px; */
+            /* text-align: center; */
+            text-indent: 15px;
+        }
+
+        .navbar{
+            width: 100%;
+            height: 70px;
+            background-color: black;
+            /* color: #fff; */
+        }
+
+        ul{
+            list-style-type: none;
+            /* margin: 0 50px; */
+            
+        }
+        li{
+            color: #fff;
+            float: left;
+            /* border: 2px solid white; */
+            padding: 0 10px;
+            margin: 0 30px ;
+            float: right;
+            /* margin-top: 30px; */
+            line-height: 65px;
+            font-size: 25px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        section{
+            
+            width: 100%;
+            margin: 10px;
+            display: flex;
+            flex-wrap: wrap;
+           
+            
+        }
+        section div{
+            /* margin: 10px; */
+           
+            padding: 20px;
+            border: 2px solid black;
+            background-color: aqua;
+            
+
+        }
+        /* .flex1{
+            flex: 2;
+        }
+        .flex2{
+            flex: 3;
+        }
+        .flex3{
+            flex: 2;
+        } */
+
+       html{
+        font-size: 62.5%;
+       }
+       .center_div{
+        width: 50vw;
+        height: 50vh;
+        background-color: #1e272e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .wave{
+        width: 0.6rem;
+        height: 10rem;
+        background-color: #4bcffa;
+        margin: 0 0.6rem;
+        border-radius: 0.6rem;
+        animation: waves 1s linear infinite;
+        
+       }
+       @keyframes waves{
+        0%{
+            transform: scale(0);
+        }
+        50%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(0);
+        }
+       }
+
+       .wave:nth-child(2){
+        animation-delay: 0.1s;
+       }
+       .wave:nth-child(3){
+        animation-delay: 0.2s;
+       }
+       .wave:nth-child(4){
+        animation-delay: 0.3s;
+       }
+       .wave:nth-child(5){
+        animation-delay: 0.4s;
+       }
+       .wave:nth-child(6){
+        animation-delay: 0.5s;
+       }
+       .wave:nth-child(7){
+        animation-delay: 0.6s;
+       }
+       .wave:nth-child(8){
+        animation-delay: 0.7s;
+       }
+       .wave:nth-child(9){
+        animation-delay: 0.8s;
+       }
+       .wave:nth-child(10){
+        animation-delay: 0.9s;
+       }
+
+
+       .main_div{
+        width: 1200px;
+        height: 0;
+        background-color:lemonchiffon;
+        /* box-shadow: 2px 8px 10px rgba(0,0,0,0.8); */
+        margin: 10px auto;
+        font-size: 20px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 3fr;
+        grid-template-rows:repeat(3,200px) ;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        
+       }
+       .item-1{
+        background-color: aqua;
+       }
+       .item-2{
+        background-color: gray;
+       }
+       .item-3{
+        background-color: yellowgreen;
+       }
+       .item-4{
+        background-color: goldenrod;
+       }
+       .item-5{
+        background-color: lightsalmon;
+       }
+       .item-6{
+        background-color: lightsteelblue;
+       }
+       
+      
+
+        
+    </style>
+</head>  
+<body>
+    <div class="img1">
+
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil architecto delectus ad aperiam suscipit facilis, aspernatur sint temporibus obcaecati libero! Perferendis labore cupiditate, dolorum recusandae hic quo tempora ad similique!</p>
+
+    <div class="img2">
+
+    </div>
+
+
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quam magnam iste animi nobis unde placeat. Quia totam asperiores hic? Sint esse eos qui, ea facere eligendi. Magnam, accusamus dolor!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quam magnam iste animi nobis unde placeat. Quia totam asperiores hic? Sint esse eos qui, ea facere eligendi. Magnam, accusamus dolor!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quam magnam iste animi nobis unde placeat. Quia totam asperiores hic? Sint esse eos qui, ea facere eligendi. Magnam, accusamus dolor!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quam magnam iste animi nobis unde placeat. Quia totam asperiores hic? Sint esse eos qui, ea facere eligendi. Magnam, accusamus dolor!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quam magnam iste animi nobis unde placeat. Quia totam asperiores hic? Sint esse eos qui, ea facere eligendi. Magnam, accusamus dolor!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quam magnam iste animi nobis unde placeat. Quia totam asperiores hic? Sint esse eos qui, ea facere eligendi. Magnam, accusamus dolor!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quam magnam iste animi nobis unde placeat. Quia totam asperiores hic? Sint esse eos qui, ea facere eligendi. Magnam, accusamus dolor!</p>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>Service</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+
+    <section>
+     <div class="flex1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed saepe sint laboriosam repellat harum delectus numquam error doloremque quaerat ullam, placeat animi aliquam perspiciatis nisi blanditiis voluptatem suscipit, maiores aliquid.
+     </div>
+
+     <div  class="flex2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed saepe sint laboriosam repellat harum delectus numquam error doloremque quaerat ullam, placeat animi aliquam perspiciatis nisi blanditiis voluptatem suscipit, maiores aliquid.
+     </div>
+
+     <div class="flex3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed saepe sint laboriosam repellat harum delectus numquam error doloremque quaerat ullam, placeat animi aliquam perspiciatis nisi blanditiis voluptatem suscipit, maiores aliquid.
+     </div>
+
+    </section>
+
+    <progress value="22" max="100"></progress>
+
+    <details>
+        <summary>Hii</summary>
+        <p>Hii my name is pri</p>
+        <p>Hii my name is pri</p>
+        <p>Hii my name is pri</p>
+        <p>Hii my name is pri</p>
+    </details>
+
+    <div class="center_div">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+
+    <div class="main_div">
+        <div class="item item-1">Item1</div>
+        <div class="item item-2">Item2</div>
+        <div class="item item-3">Item3</div>
+        <div class="item item-4">Item4</div>
+        <div class="item item-5">Item5</div>
+        <div class="item item-6">Item6</div>
+    </div>
+
+
+</body>
+        
+    
+</html>

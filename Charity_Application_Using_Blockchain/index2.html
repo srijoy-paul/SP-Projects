@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All about campaign</title>
+    <link rel="stylesheet" href="style2.css">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=BhuTuka+Expanded+One&family=Dancing+Script:wght@700&family=Nunito+Sans:wght@200;300&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <nav class="navbar">
+            <img src="images/logo.png" alt="logo">
+           <h2 class="logo">Care<span class="connect">Connect</span></h2>
+           
+       </nav>
+    </div>
+
+    
+
+      
+
+<div class="slider-container">
+    <div class="slide">
+    <img src="images/kids.jpg" alt="" class="header-img">
+    </div>
+
+    <div class="slide">
+    <img src="images/Animals.jpg" alt="" class="header-img">
+    </div>
+
+    <div class="slide">
+    <img src="images/charity.jpg" alt="" class="header-img">
+    </div>
+
+    <div class="slide">
+    <img src="images/charity hands.jpg" alt="" class="header-img">
+    </div>
+</div>
+
+<div id="title"></div>
+
+<span class="arrow prev" onclick="controller(-1)"> &#10094;</span>
+<span class="arrow next"  onclick="controller(1)">&#10095;</span>
+
+ 
+<div class="container1">
+    
+    
+    <div  class="box">
+        <img src="images/daysleft.png" alt="" class="icon">
+        <h3>Days left</h3>
+        <div id="days-left" class="data">23</div>
+        
+    </div>
+
+    <div class="box">
+        <img src="images/handraised.png" alt="" class="icon">
+        <h3>Amount raised</h3>
+        <div id="amount-raised" class="data">100</div>
+    </div>
+
+    <div  class="box">
+        <img src="images/donars.png" alt="" class="icon">
+        <h3>Number of Donators</h3>
+        <div id="donators" class="data">250</div>
+    </div>
+
+
+</div>
+
+<div class="container2">
+
+     <div class="creatoraddr">
+        <h2>Creator Address</h2>
+        <div class="addrs"></div>
+    </div>
+    
+    <div class="discription">
+        <h2>Description about Campaign</h2>
+        <div class="discriptionaboutcampaign"></div>
+    </div>
+    
+
+
+</div>
+
+<div class="container3">
+
+<div class="donator-list-container">
+
+    <h2>Donators List</h2>
+
+    <div class="donator-list">
+
+        <!-- <div class="boxes">
+            <span>1.</span>
+            <input type="text" class="addrs" placeholder="Address">
+            <span></span>
+        </div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+         -->
+         <ul id="list">
+            <li><span>1.</span>Address <span>amount</span></li>
+            <li><span>1.</span>Address <span>amount</span></li>
+            <li><span>1.</span>Address <span>amount</span></li>
+         </ul>
+
+    </div>
+
+
+
+</div>
+
+<div class="fund-container">
+
+    
+     <h2>Fund</h2>
+     <input type="number" placeholder="Enter amount in ETH"  id="amount">
+     <div class="msgslider"></div>
+     <button class="fund-btn">Fund</button>
+
+
+</div>
+
+<div class="bottom-up-arrow">
+    <a href="#" ></a>
+
+ </div>
+
+ 
+
+</div>
+
+
+
+<script src="index2.js"></script>
+</body>
+</html>

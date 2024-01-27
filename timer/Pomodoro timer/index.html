@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #f1f1f1;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            width: 600px;
+            /* background-color: red; */
+            margin: 0 auto;
+            text-align: center;
+            padding: 70px;
+        }
+        .timer{
+            font-size: 4rem;
+            font-weight: 400;
+            padding: 50px;
+        }
+        .buttons>button{
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 0 5px;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 2px 4px 10px rgba(0,0,0,0.3);
+            background-color: cadetblue;
+            cursor: pointer;
+        }
+        .buttons .start{
+            
+            background-color: crimson;
+        }
+        .buttons .stop{
+            background-color: chocolate;
+        }
+
+        .buttons .reset{
+            background-color: darkcyan;
+        }
+
+        button:hover{
+            box-shadow: 2px 3px 10px rgba(0,0,0,0.5);
+            
+        }
+
+        button[disabled]{
+            opacity: .7;
+            cursor: default;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Pomodoro Timer</h1>
+    <div class="timer">
+        <span id="min">25</span><span>:</span><span id="sec">00</span>
+    </div>
+    
+    <div class="buttons">
+        <button class="start">Start</button>
+        <button class="stop">Stop</button>
+        <button class="reset">Reset</button>
+    </div>
+</div>
+
+<script>
+
+    const startbtn = document.getElementsByClassName('start');
+    const stopbtn = document.getElementsByClassName('stop');
+    const resetbtn = document.getElementsByClassName('reset');
+
+    
+
+    var min=24,sec=60,clear;
+    
+
+    startbtn[0].addEventListener('click',()=>{
+
+        startbtn[0].disabled = true;
+        stopbtn[0].disabled = false;
+        resetbtn[0].disabled =false;
+        
+         clear = setInterval(function(){
+          
+            sec--;
+            if(sec==0)
+            {
+                
+                min -= 1;
+                sec=59;
+            }
+            if(min==0)
+            {
+              alert('Your time is finished');
+            }
+
+            if(sec>=0 && sec<=9)
+            {
+                document.getElementById('sec').textContent ="0" + sec;
+
+            }
+            else{
+                document.getElementById('sec').textContent = sec;
+
+            }
+            
+            if(min>=0 && min<=9)
+            {
+                document.getElementById('min').textContent = "0" + min;
+            }
+            else{
+                document.getElementById('min').textContent = min;
+            }
+            
+            
+        },1000);
+    });
+
+    
+
+    stopbtn[0].addEventListener('click',()=>{
+
+         stopbtn[0].disabled = true;
+         startbtn[0].disabled = false;
+         resetbtn[0].disabled = false;
+
+        clearInterval(clear);
+        if(sec>=0 && sec<=9)
+            {
+                document.getElementById('sec').textContent ="0" + sec;
+
+            }
+            else{
+                document.getElementById('sec').textContent = sec;
+
+            }
+            
+            if(min>=0 && min<=9)
+            {
+                document.getElementById('min').textContent = "0" + min;
+            }
+            else{
+                document.getElementById('min').textContent = min;
+            }
+        
+        
+
+
+        
+    })
+
+    resetbtn[0].addEventListener('click',()=>{
+        min=24,sec=60;
+
+        resetbtn[0].disabled = true;
+        stopbtn[0].disabled = false;
+        startbtn[0].disabled = false;
+
+
+        clearInterval(clear);
+        document.getElementById('min').textContent = "2"+"5";
+        document.getElementById('sec').textContent = "0"+"0";
+
+    })
+
+
+
+</script>
+</body>
+</html>

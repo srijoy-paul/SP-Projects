@@ -1,0 +1,80 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+.top-container{
+
+    background-image: url("Keyboard.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+
+.text{
+
+    margin: 50px 5%;
+    text-indent: 15px;
+    font-family: sans-serif;
+    text-align: justify;
+    
+
+}
+
+
+ .navbar{
+
+    display: flex;    
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0,0,0,.3);
+    transition: background-color 0.4s;
+    
+   
+}
+.navbar ul{
+
+    display: flex;
+    list-style: none;
+    
+
+}
+
+.navbar ul li a{
+
+    text-decoration: none;
+    font-family: cursive;
+    color: black;
+    margin: 0px 10px;
+    
+}
+
+.navbar ul li a:hover{
+    color: red;
+}
+
+.navbar.active{
+
+    background-color: black;
+
+}
+.navbar.active ul li a{
+    color: white;
+}
+
+
+
+
+
